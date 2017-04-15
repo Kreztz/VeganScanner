@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.vegantextrecognition.search">
+    tools:context="com.vegantextrecognition.popLIKEIT"
+    android:background="#fcaf17">
 
-    <include layout="@layout/content_search" />
+    <include layout="@layout/content_pop_likeit" />
 
 </android.support.design.widget.CoordinatorLayout>

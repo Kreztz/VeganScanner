@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.vegantextrecognition.search">
+    tools:context="com.vegantextrecognition.listNOTVEGAN">
 
-    <include layout="@layout/content_search" />
+    <include layout="@layout/content_list_notvegan" />
 
 </android.support.design.widget.CoordinatorLayout>

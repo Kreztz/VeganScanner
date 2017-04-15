@@ -9,7 +9,30 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="109dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#03a719">
 
+            <ImageView
+                android:layout_width="94dp"
+                android:layout_height="76dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/vegan_scanner_icon"
+                android:background="#00000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Vegan Scanner"
+                android:id="@+id/textView"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -23,21 +46,14 @@
         android:layout_weight="1.03"
         android:gravity="center">
 
-        <SurfaceView
-            android:id="@+id/surface_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TextView
-            android:id="@+id/text_view"
-            android:text=""
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true" />
+        <ImageButton
+            android:layout_width="179dp"
+            android:layout_height="185dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/scan_icon"
+            android:background="#00FA75"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical" />
 
     </LinearLayout>
 
