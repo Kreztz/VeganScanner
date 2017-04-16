@@ -32,7 +32,7 @@ public class popLIKEIT extends Activity {
             public void onClick(View view) {
 
 
-                Intent i = new Intent(Intent.ACTION_SEND);
+               /* Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"veganscanner.fb@gmail.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
@@ -41,7 +41,7 @@ public class popLIKEIT extends Activity {
                     startActivity(Intent.createChooser(i, "Send mail..."));
                 } catch (android.content.ActivityNotFoundException ex) {
                 }
-
+                */
                 Toast toast = Toast.makeText(popLIKEIT.this, "Thank you for your feedback", Toast.LENGTH_LONG);
                 toast.show();
 
@@ -55,7 +55,7 @@ public class popLIKEIT extends Activity {
 
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Intent.ACTION_SEND);
+               /* Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("message/rfc822");
                 i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"veganscanner.fb@gmail.com"});
                 i.putExtra(Intent.EXTRA_SUBJECT, "Feedback");
@@ -63,7 +63,7 @@ public class popLIKEIT extends Activity {
                 try {
                     startActivity(Intent.createChooser(i, "Send mail..."));
                 } catch (android.content.ActivityNotFoundException ex) {
-                }
+                }*/
                 Toast toast = Toast.makeText(popLIKEIT.this,"Thank you for your feedback",Toast.LENGTH_LONG);
                 toast.show();
 

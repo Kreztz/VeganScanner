@@ -1,0 +1,62 @@
+Bottom menu (Scan, search, credits)
+
+Screens (Splash Screen, if(!accepted) Disclamer ; return;Scan {page bida w fostha botona scan | camera with } ) 
+
+
+
+
+
+NOT VEGAN | Still VEGAN
+why ?  ? => ingrédient 
+YES | NO  => mail feh pas d'accord wla d'accord () 
+
+
+
+daba ila chi wa7d l9a VEGAN , w dar YES , aytsifet mail aygol khona gal YES mbrok ??? oui
+
+
+If(khunadarfeedback){
+
+
+AfficherForm();
+ay3merlform w dir send.
+
+enregistrer f wa7ed fichier json phone.
+if(product exists in local) don't send
+else
+send mail.
+
+
+}
+
+
+	Search 
+
+
+
+
+
+
+ProductInfo{
+
+	SMIA;
+	Nu3;
+	Marque;
+	if(not vegàn) ingredient = ;
+	Vegan (from app)
+	feedback(Oui/NON)
+
+
+}
+
+Google.drive.com/file/ingretient.txt
+Drive => aytelechargiwh => ancopyiw dkchi li fih fost
+
+
+
+b7al isitvegan hhh 
+
+masme3tch akhir haja
+activity_fragment  7ssen men activity a chaque fois.
+avast tathder m3ak
+mohim khasni ndir dirasa 3la dakchi dirasa 15min :) 

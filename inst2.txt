@@ -1,0 +1,9 @@
+ingre,di1,ingredient2,ingredient3....
+
+sort 
+sorti< 	 a -> z 
+ndiro fichier akhor tigulina fine kula 7aja  a = 0 - 100
+					     z = 101 - 112
+
+
+ 
