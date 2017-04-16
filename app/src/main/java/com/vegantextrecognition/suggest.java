@@ -29,6 +29,7 @@ public class suggest extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suggest);
         loadMenu();
+        //oklol
         editTextSubject = (EditText) findViewById(R.id.editTextSubject);
         editTextMessage = (EditText) findViewById(R.id.editTextMessage);
         buttonSend = (Button) findViewById(R.id.buttonSend);
