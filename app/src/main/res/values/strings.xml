@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">veganTextRecognition</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_search">search</string>
+    <string name="title_activity_pop_likeit">popLIKEIT</string>
+    <string name="title_activity_scan">scan</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_list_notvegan">listNOTVEGAN</string>
+    <string name="title_activity_send_ingredient_problem">sendIngredientProblem</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">about</string>
+    <string name="title_activity_suggest">suggest</string>
 </resources>

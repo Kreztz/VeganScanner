@@ -1,1 +1,1 @@
-bonjour bonsoir salut
+bonjour,salut,bonsoir,hamid

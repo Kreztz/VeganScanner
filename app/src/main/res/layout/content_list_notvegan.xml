@@ -9,23 +9,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.vegantextrecognition.MainActivity"
-    tools:showIn="@layout/activity_main">
-
-    <SurfaceView
-        android:id="@+id/surface_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    tools:context="com.vegantextrecognition.listNOTVEGAN"
+    tools:showIn="@layout/activity_list_notvegan">
 
     <TextView
-        android:id="@+id/text_view"
-        android:text=""
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="List of NOT Vegan ingredients : "
+        android:id="@+id/listnotveganTV"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true" />
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listNotVeganLV"
+        android:layout_below="@+id/listnotveganTV"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

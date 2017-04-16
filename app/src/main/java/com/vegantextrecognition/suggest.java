@@ -2,87 +2,60 @@ package com.vegantextrecognition;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
-
-import java.io.IOException;
-import java.io.InputStream;
-
-public class search extends Activity {
-    EditText edittext;
-    TextView vegan;
-    TextView notvegan;
+public class suggest extends Activity {
     ImageButton toscan;
     ImageButton toabout;
     ImageButton tosearch;
     ImageButton tosuggest;
+
+
+    private EditText editTextSubject;
+    private EditText editTextMessage;
+
+    private Button buttonSend;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search);
+        setContentView(R.layout.activity_suggest);
         loadMenu();
-        edittext = (EditText) findViewById(R.id.ingName);
-        vegan = (TextView) findViewById(R.id.vegan);
-        notvegan = (TextView) findViewById(R.id.notvegan);
+        editTextSubject = (EditText) findViewById(R.id.editTextSubject);
+        editTextMessage = (EditText) findViewById(R.id.editTextMessage);
+        buttonSend = (Button) findViewById(R.id.buttonSend);
+        buttonSend.setOnClickListener(new View.OnClickListener() {
 
-        Button search = (Button) findViewById(R.id.search);
-        search.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
 
-            @Override
-            public void onClick(View view) {
-
-
-                InputStream is = null;
-                String text = "";
                 try {
-                    is = getAssets().open("recognizedTEXT.txt");
-                    int size = is.available();
-                    byte[] buffer = new byte[size];
-                    is.read(buffer);
-                    is.close();
-                    text = new String(buffer);
-                } catch (IOException e) {
-                    e.printStackTrace();
+                    GMailSender sender = new GMailSender("veganscanner.botsender@gmail.com", "vspassword");
+                    sender.sendMail(editTextSubject.getText().toString().trim(),
+                            editTextMessage.getText().toString().trim(),
+                            "veganscanner.botsender@gmail.com",
+                            "veganscanner.fb@gmail.com");
+                } catch (Exception e) {
+                    Log.e("SendMail", e.getMessage(), e);
                 }
 
-                String[] arr = text.split(",");
-                String ss = "";
-                int i = 0, isNotVegan = 0;
-                while (i < arr.length && isNotVegan == 0) {
-                    ss = arr[i];
-                    if (ss.equals(edittext.getText().toString().trim())) {
-                        vegan.setBackgroundColor(Color.parseColor("#7b7b7b"));
-                        notvegan.setBackgroundColor(Color.parseColor("#ff0000"));
-                        isNotVegan = 1;
-                    } else {
-                        vegan.setBackgroundColor(Color.parseColor("#00FA75"));
-                        notvegan.setBackgroundColor(Color.parseColor("#7b7b7b"));
-                    }
-                    i++;
-
-
-                }
             }
-
-
         });
 
 
+
     }
+
+
+
 
 
 
