@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vegantextrecognition.about"
+    tools:showIn="@layout/activity_about">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#fcaf17"
+        android:weightSum="1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="78dp"
+            android:layout_height="31dp"
+            android:id="@+id/toSearch"
+            android:src="@drawable/search_icon"
+            android:background="#fcaf17"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toSuggest"
+            android:src="@drawable/help_icon"
+            android:background="#fcaf17"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toAbout"
+            android:background="@drawable/about_icon"
+            android:layout_toEndOf="@+id/toSearch"
+            android:layout_alignTop="@+id/toSuggest" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toScan"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/toSearch"
+            android:background="@drawable/scan_icon" />
+    </RelativeLayout>
+</RelativeLayout>

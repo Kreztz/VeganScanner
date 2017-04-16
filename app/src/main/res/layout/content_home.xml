@@ -17,7 +17,7 @@
             android:padding="5dp"
             android:background="#03a719">
 
-            <ImageView
+            ImageView
                 android:layout_width="94dp"
                 android:layout_height="76dp"
                 android:id="@+id/imageView"
@@ -49,7 +49,7 @@
         <ImageButton
             android:layout_width="179dp"
             android:layout_height="185dp"
-            android:id="@+id/imageButton"
+            android:id="@+id/scan"
             android:src="@drawable/scan_icon"
             android:background="#00FA75"
             android:padding="5dp"
@@ -57,7 +57,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="64dp"
@@ -66,22 +66,42 @@
         android:padding="5dp">
 
         <ImageButton
-            android:layout_width="97dp"
-            android:layout_height="98dp"
-            android:id="@+id/imageButton2"
-            android:src="@drawable/help_icon"
-            android:background="#fcaf17"
-            android:padding="5dp"
-            android:layout_gravity="bottom" />
-
-        <ImageButton
             android:layout_width="78dp"
             android:layout_height="31dp"
-            android:id="@+id/imageButton3"
+            android:id="@+id/toSearch"
             android:src="@drawable/search_icon"
             android:background="#fcaf17"
             android:padding="5dp"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true" />
 
-    </LinearLayout>
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:id="@+id/toSuggest"
+            android:src="@drawable/help_icon"
+            android:background="#fcaf17"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/toAbout"
+            android:background="@drawable/about_icon"
+            android:layout_toEndOf="@+id/toSearch"
+            android:layout_alignTop="@+id/toSuggest" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toScan"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/toSearch"
+            android:background="@drawable/scan_icon" />
+
+    </RelativeLayout>
 </LinearLayout>

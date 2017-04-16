@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".search">
+    tools:context="com.vegantextrecognition.about">
 
-    <include layout="@layout/content_search" />
+    <include layout="@layout/content_about" />
 
 </android.support.design.widget.CoordinatorLayout>
